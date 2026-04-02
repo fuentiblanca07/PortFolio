@@ -1,0 +1,32 @@
+.loading-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  gap: 16px;
+  font-family: sans-serif;
+  color: #555;
+}
+
+.loading-wrapper p {
+  font-weight: bold;
+}
+
+.circle {
+  width: 16px;
+  height: 16px;
+  margin: 0 4px;
+  background-color: #0077ff;
+  border-radius: 50%;
+  display: inline-block;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.circle:nth-child(2) { animation-delay: 0.2s; }
+.circle:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes bounce {
+  0% { transform: translateY(0); opacity: 0.5; }
+  100% { transform: translateY(-15px); opacity: 1; }
+}
