@@ -4,7 +4,8 @@ import path from 'path'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-base: '/PortFolio/',  plugins: [
+  base: '/PortFolio/',
+  plugins: [
     react(),
     tailwindcss(),
   ],
@@ -14,7 +15,7 @@ base: '/PortFolio/',  plugins: [
     },
   },
   build: {
-    outDir: 'dist',           // ← where the build output goes
+    outDir: 'dist',
     emptyOutDir: true,
   },
   server: {
