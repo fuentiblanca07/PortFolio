@@ -20,17 +20,9 @@ export default function App() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen relative">
-     
-      <div className="relative z-10 flex flex-col min-h-screen">
-
-        <main className="flex-1 container mx-auto">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
           </Routes>
-        </main>
-      </div>
-    </div>
   );
 }

@@ -196,12 +196,9 @@ const Plasma = ({
   }, [color, speed, direction, scale, opacity, mouseInteractive]);
 
   return (
-    <div ref={containerRef} style={{ position: 'relative', width: '100%', minHeight: '100vh' }}>
-      {/* canvas is injected here by useEffect as position:absolute */}
-      <div style={{ position: 'relative', zIndex: 1 }}>
-        {children}
-      </div>
-    </div>
+  <div ref={containerRef}>
+    {children}
+</div>
   );
 };
 
