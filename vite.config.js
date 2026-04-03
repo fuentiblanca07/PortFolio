@@ -4,7 +4,7 @@ import path from 'path'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/fuentiblanca07.github.io/', // ← add this (your repo name)
+  base: '/fuentiblanca07.github.io/PortFolio/', // ← add this (your repo name)
   plugins: [
     react(),
     tailwindcss(),
