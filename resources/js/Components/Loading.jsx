@@ -1,5 +1,5 @@
 import React from "react";
-import "./Loading.css";
+import "../../css/Loading.css";
 
 export const LoadingLazy = () => {
   console.log("Loading component is rendering"); // Debug log

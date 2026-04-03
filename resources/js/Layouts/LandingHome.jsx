@@ -1,10 +1,11 @@
-<div style={{ width: '1080px', height: '1080px', position: 'relative' }}>
-  <Plasma
-    color="#ffffff"
-    speed={1}
-    direction="forward"
-    scale={1}
-    opacity={1}
-    mouseInteractive
-  />
-</div>
+export default function BodyLayout({ children }) {
+  return (
+    <div className="flex flex-col min-h-screen relative">
+      <div className="relative z-10 flex flex-col min-h-screen">
+        <main className="flex-1 container mx-auto">
+          {children}
+        </main>
+      </div>
+    </div>
+  );
+}

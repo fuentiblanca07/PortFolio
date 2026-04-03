@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import { LoadingLazy } from "./Components/Loading";
+import { PlasmaBackground } from "./components/PlasmaBackground";
 // Direct imports
 import Home from "./Pages/Home.jsx";
 import About from "./Pages/About.jsx";
@@ -19,15 +20,17 @@ export default function App() {
   }
 
   return (
-    <div>
-      <header>My Portfolio</header>
+    <div className="flex flex-col min-h-screen relative">
+     
+      <div className="relative z-10 flex flex-col min-h-screen">
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-
-      <footer>© 2026 Julius</footer>
+        <main className="flex-1 container mx-auto">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </main>
+      </div>
     </div>
   );
 }
