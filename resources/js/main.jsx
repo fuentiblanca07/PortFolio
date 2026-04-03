@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./app";
+import "../css/tailwind.css";
 import "../css/style.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
